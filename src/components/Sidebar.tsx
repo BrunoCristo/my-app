@@ -9,7 +9,7 @@ import {
   Briefcase,
   FileText,
   Building2,
-  Users,
+  PackageOpen,
   Settings,
 } from "lucide-react";
 import ToggleSidebarButton from "./ToggleSidebarButton";
@@ -23,7 +23,7 @@ const Sidebar = () => {
     { href: "/negociacoes", icon: Briefcase, label: "Negociações" },
     { href: "/contratos", icon: FileText, label: "Contratos" },
     { href: "/empresas", icon: Building2, label: "Empresas" },
-    { href: "/cadastros", icon: Users, label: "Cadastros" },
+    { href: "/servicos", icon: PackageOpen, label: "Servicos" },
     { href: "/configuracoes", icon: Settings, label: "Configurações" },
   ];
 
@@ -65,7 +65,7 @@ const Sidebar = () => {
               john.doe@example.com
             </p>
             <p className="mt-2 text-sm font-medium text-primary">
-              Premium Account
+              Joven Pan FM
             </p>
           </div>
         )}
