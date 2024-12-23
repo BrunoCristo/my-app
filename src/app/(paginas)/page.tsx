@@ -1,7 +1,5 @@
 "use client";
 
-// import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
-
 const data = [
   { name: "Jan", total: Math.floor(Math.random() * 5000) + 1000 },
   { name: "Feb", total: Math.floor(Math.random() * 5000) + 1000 },
