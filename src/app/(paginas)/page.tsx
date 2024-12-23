@@ -1,6 +1,6 @@
 "use client";
 
-import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
+// import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
 
 const data = [
   { name: "Jan", total: Math.floor(Math.random() * 5000) + 1000 },
@@ -39,13 +39,13 @@ export default function Dashboard() {
       </div>
       <div className="bg-white p-6 rounded-lg shadow">
         <h2 className="text-xl font-semibold mb-4">Visão Geral de Vendas</h2>
-        <ResponsiveContainer width="100%" height={350}>
+        {/* <ResponsiveContainer width="100%" height={350}>
           <BarChart data={data}>
             <XAxis dataKey="name" stroke="#888888" />
             <YAxis stroke="#888888" />
             <Bar dataKey="total" fill="#adfa1d" radius={[4, 4, 0, 0]} />
           </BarChart>
-        </ResponsiveContainer>
+        </ResponsiveContainer> */}
       </div>
     </div>
   );
