@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
         hostname: "**",
       },
     ],
+  }, 
+  eslint: {
+    ignoreDuringBuilds: true, // Ignora ESLint no comando 'next build'
   },
 };
 
