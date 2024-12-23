@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Edit, Trash, ChevronLeft, ChevronRight, Plus } from "lucide-react";
-import Link from "next/link";
+// import { Edit, Trash, ChevronLeft, ChevronRight, Plus } from "lucide-react";
+// import Link from "next/link";
 
 export default function CriarEditarServicoPage() {
   const [nome, setNome] = useState("");
@@ -13,6 +13,7 @@ export default function CriarEditarServicoPage() {
   const handleUnidadeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setUnidade(e.target.value);
     setValor(""); // Limpa o valor ao mudar a unidade
+    setMedida("")
   };
 
   const handleValorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,6 +38,8 @@ export default function CriarEditarServicoPage() {
       arquivo,
     });
   };
+
+  console.log(handleSubmit)
 
   return (
     <div className="p-8 space-y-8">
