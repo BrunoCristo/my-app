@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Edit, Trash, ChevronLeft, ChevronRight, Plus } from "lucide-react";
-import Link from "next/link";
+import { Edit, Trash, ChevronLeft, ChevronRight } from "lucide-react";
 import FormularioServico from "../../../components/Servicos/FormularioServico";
 
 const servicos = [
