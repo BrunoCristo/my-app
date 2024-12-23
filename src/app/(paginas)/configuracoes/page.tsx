@@ -15,7 +15,7 @@ export default function Configuracoes() {
   const [endereco, setEndereco] = useState("Rua Exemplo, 123");
   const [telefone, setTelefone] = useState("(11) 1234-5678");
   const [activeTab, setActiveTab] = useState("perfil");
-  const [image, setImage] = useState(null); // Para armazenar a imagem carregada
+  const [image, setImage] = useState<string | null>(null);
 
   const onDrop = (acceptedFiles: File[]) => {
     if (acceptedFiles && acceptedFiles.length > 0) {
@@ -25,8 +25,10 @@ export default function Configuracoes() {
 
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
-    accept: "image/*", // Aceita apenas imagens
+    accept: ["image/*"],
   });
+  
+  
 
   const usuariosVinculados = [
     {
